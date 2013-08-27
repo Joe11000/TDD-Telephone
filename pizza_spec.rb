@@ -48,5 +48,16 @@ describe "Topping" do
     it "should have a topping bake time" do
       expect(topping.required_bake_time).to eq(20)
     end
+
+    it "should have time_baked default to 0" do
+      expect(topping.time_baked).to eq(0)
+    end
+  end
+
+  describe "#bake(time)" do
+
+    it "should increment time_baked by arguement time" do
+      expect{t = Topping.new('',10); t.bake(5); t.time_baked == 5;}
+    end
   end
 end

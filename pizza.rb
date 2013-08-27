@@ -1,6 +1,6 @@
 class Pizza
   attr_reader :name, :time_baked, :description, :toppings
-  def initialize(name, time_baked=0)
+  def initialize(name, time_baked = 0)
 
     @time_baked = time_baked
     @name = name
@@ -18,6 +18,7 @@ class Topping
   def initialize(name, required_bake_time)
     @name = name
     @required_bake_time = required_bake_time
+
   end
 end
 
