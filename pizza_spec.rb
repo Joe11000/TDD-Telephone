@@ -19,6 +19,9 @@ describe "Pizza" do
       expect(pizza.time_baked).to eq(0)
     end
 
+    it "should have many toppings" do
+      pizza.toppings.class.should eq(Array)
+    end
   end
 
   describe "#description" do
@@ -27,11 +30,23 @@ describe "Pizza" do
     end
   end
 
+  describe "#required_bake_time" do
+    it "should return the bake time of the longest topping plus 15 minutes" do
+    end
+  end
 end
 
 describe "Topping" do
-  let(:mytopping){ Topping.new('Pinnaple') }
+  let(:topping) { Topping.new('Pineapple', 20) }
 
-  # describe ""
+  describe "#initialize" do
+
+    it "should have a topping name" do
+      expect(topping.name).to eq("Pineapple")
+    end
+
+    it "should have a topping bake time" do
+      expect(topping.required_bake_time).to eq(20)
+    end
+  end
 end
-
