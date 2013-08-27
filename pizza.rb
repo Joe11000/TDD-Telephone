@@ -14,11 +14,11 @@ end
 
 
 class Topping
-  attr_reader :name, :required_bake_time
+  attr_reader :name, :required_bake_time, :time_baked
   def initialize(name, required_bake_time)
     @name = name
     @required_bake_time = required_bake_time
-
+    @time_baked = 0
   end
 end
 
