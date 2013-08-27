@@ -23,7 +23,7 @@ describe "Pizza" do
 
   describe "#description" do
     it "should have a pizza description" do
-      expect (pizza.description).to eq('This is a description of the pizza.')
+      expect(pizza.description).to eq('This is a description of the pizza.')
     end
   end
 
