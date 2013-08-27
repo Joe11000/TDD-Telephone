@@ -1,3 +1,12 @@
+# TDD Telephone
+
+In this exercise you will be writing tests to drive development by another team. You'll be writing Rspec tests -- the other team will be writing code. The final result should be a working Ruby application with full test coverage. At the same time, you will also be writing code for the other team's tests. You and the other team will be ping-ponging back and forth over Github/Hipchat.
+
+Some rules:
+- You are not allowed to verbally communicate with the other team
+- You cannot write code that goes beyond the test (don't try to "guess" what the code should be)
+- You cannot deliver code with failing tests
+
 ## Pizza
 
 #### Description:
