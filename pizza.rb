@@ -7,5 +7,3 @@ class Pizza
     @description = "This is a description of the pizza."
   end
 end
-
-
